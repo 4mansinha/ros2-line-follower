@@ -1,0 +1,12 @@
+line_follower:
+  ros__parameters:
+    image_topic: /camera/image_raw      # gz camera topic bridged to ROS
+    cmd_vel_topic: /cmd_vel
+    use_stamped: false                  # true only for ros2_control diff_drive
+    # camera geometry from diff_bot.urdf (base_link z=0.04 + camera z=0.06)
+    cam_height: 0.10
+    cam_x: 0.11
+    cam_pitch: 0.35
+    cam_hfov: 1.3962634
+    image_stride: 2
+    v_max: 0.25
